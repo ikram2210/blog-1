@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+header{
+	height: 170px;
+	background-color: #C7C3C3;
+	
+
+}
+.couleur{
+	background-color: #AE0404;
+	height: 150px;
+
+}
+
+.entete{
+	
+	margin-left:  180px;
+	padding-top: 30px;
+line-height: 	15px;
+
+
+
+}
+
+h1{
+	font-family: 'Racing Sans One';
+	font-size: 35px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+}
+
+p.inspiration{
+font-size: 22px;
+color: #FFFFFF;
+font-family: 'Roboto', sans-serif;
+font-weight: normal;
+
+
+}
+a{
+	color: #FFFFFF;
+	font-size: 17px;
+    text-decoration:none;
+    align-content: center;
+}
+
+#button{
+	float: right;
+	margin-right:  170px;
+	margin-top: -35px;
+	background-color: #630E0E;
+	width: 240px;
+	height: 30px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 1px 1px 1px #000000 ;
+	text-align: center;
+	padding-top:8px;
+}
+footer{
+ 	background-color: #AE0404;
+ 	width: 100%;
+ 	margin-top: 120px;
+ 	position: absolute;
+ 	padding: 0;
+ 	margin-left:  -170px;
+ 
+    }
+
+   .info {
+   	display : flex;
+   	justify-content: space-around;
+   	margin-right: 8%;
+   	margin-left: 8%;
+
+   }
+   .blog{
+   	width: 400px;
+   }
+ p.droit {
+	text-align:  center;
+	color: #FFFFFF;
+	font-weight: lighter;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 20px;
+	font-size: 12px;
+
+}
+h6{
+	color: #FFFFFF;
+	font-family: 'Racing Sans One';
+	font-weight: bold;
+	font-size: 20px;
+	/*text-decoration: underline #C4C4C4;*/
+	margin: 0;
+	margin-top: 10px;
+
+}
+hr{
+	margin-left: 160px;
+	margin-right: 160px;
+}
+.info p{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+
+}
+#ligne{
+
+   height: 5px;
+	width: 40px;
+	background-color: #C4C4C4;
+
+}
+.liens p{
+	line-height: 23px;
+}
+.partenaires p{
+	line-height: 23px;
+}
+#button1{
+
+	background-color: #AE0404;
+	width: 150px;
+	height: 25px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	/*font-size: 8px;*/
+	font-family: 'Roboto', sans-serif;
+	margin-right: 43%;
+	margin-left: 43%;
+    text-align: center;
+    margin-top: 15px; 
+    padding-top: 6px;
+    box-shadow: 2px 2px 2px #000000 ;
+
+}
+#button1 a{
+	font-size: 12px;
+
+
+}
+
+.data{
+	/*height: 400px;
+	width: 1000px;*/
+	background-color: #C7C3C3;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 280px;
+    width:850px;
+    padding-top:10px;
+
+  
+
+
+
+    justify-content: space-around;
+
+
+}
+.ressource{
+
+	height: 130px;
+	width: 230px;
+	background-color: #EBE3E3;
+	border-radius: 10px;
+	margin-top:10px;
+	text-align: center;
+
+	
+}
+.page{
+	height: 400px;
+	width: 1000px;
+	background-color: #C7C3C3;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+h2{
+	font-size: 20px;
+}
+.back{
+
+	background-color: #AE0404;
+	width: 150px;
+	height: 25px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	/*font-size: 8px;*/
+	font-family: 'Roboto', sans-serif;
+	margin-right: 27%;
+	margin-left: 27%;
+    text-align: center;
+   /* margin-top: 20px; 
+    padding-top: 5px;*/
+    box-shadow: 1px 1px 1px #000000 ;
+    margin-top:50px;
+    
+
+
+}
+/*#button1 a{
+	font-size: 12px;
+
+
+}*/
+#titre1{
+	height: 50px;
+	background-color: #AE0404;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+    }
+    p.liste { 
+  	
+ color: #FFFFFF;
+ font-family: 'Roboto', sans-serif;
+ font-size: 22px;
+ font-weight: normal;
+ margin-left: 30px;
+ margin-top: 40px;
+ padding-top: 8px;
+
+    }
+    #button2{
+
+	background-color: #AE0404;
+	width: 70px;
+	height: 18px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	margin-right: 35%;
+	margin-left: 35%;
+    text-align: center;
+    /*margin-top: 15px; 
+    padding-top: 6px;*/
+    box-shadow: 1px 1px 1px #000000 ;
+   
+
+}
+#button2 a{
+	font-size: 10px;
+}
+
+h2{
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom:  0;
+
+    text-decoration: underline #AE0404;
+}
+h3{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+
+	color: #696969;
+}
+.fiche{
+
+	height: 200px;
+	width: 300px;
+	background-color: #EBE3E3;
+	border-radius: 10px;
+	margin-top:10px;
+	text-align: center;
+
+}
+.newressource{
+	float: right;
+	margin-right:  170px;
+	margin-top: -35px;
+	background-color: #630E0E;
+	width: 240px;
+	height: 30px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 1px 1px 1px #000000 ;
+	text-align: center;
+	padding-top:8px;
+
+}

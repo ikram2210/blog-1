@@ -1,0 +1,192 @@
+<!-- html lang="fr">
+	<head>
+		<link href="main.css" rel="stylesheet" disable>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content="API BLOG" />
+    <meta name="viewport" content="width=device-width">
+		<title>Blog ressources dev</title>
+	</head>
+	<body> -->
+		<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notre_site</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+        
+		<header>
+        <div class = "couleur">
+		<div class = "entete">
+		<h1>BLOG DES CODEUSES</h1>
+		<p class= "inspiration">Ressources & inspiration créative </p>
+	    </div>
+	    <a href="formulaire.html"class="newressource">Ajouter une ressource</a>
+		<!-- <input type = "button" id = "button" value="Ajouter une ressource"> -->
+		<!-- <div id= "button">
+	    <a href=" bouton" >Ajouter une ressource</a>
+	    </div>
+	    </div> -->
+	</header>
+        <div class = "page">
+        	<div id = "titre1">
+		<p class="liste">Liste ressources</p>
+	    </div>
+		<div class="data"></div>
+
+		<!-- <div id= "button1">
+	    <a href=" bouton" > Article suivant   > </a>			
+		</div>
+	</div> -->
+   <!--      <div class="blog"></div> -->
+		
+
+
+		
+	
+
+		<script>
+	
+		
+function getArticles(){
+
+
+fetch("http://localhost:3000/articles") // on utilise l'url définie dans le back comme base pour le script
+        .then(response => response.json()) //on transforme les données de la BDD en .JSON
+		.then(data => generateHtml(data))  // on lui attribue une valeur
+
+const generateHtml = (data) => { // création de la variable generatehtml puis de la fonction
+	console.log(data) // on affiche data dans la console pour vérifier que le contenu est bien récupéré
+	let html = "" // on définit html qui va générer des données de type string
+	for (var i = 0; i < data.length; i++) { //boucle for pour parcourir notre tableau de données (data) données qui se stockent dans "i"
+		html += `
+	  <div class = "ressource">
+		<h2 class="titre">${data[i].titre}</h2>
+		<h3 class="contenu">${data[i].contenu}</h3>
+		<div id = "button2" onclick= "getArticle('${data[i]._id}')">Voir</div>
+		
+		</div>
+
+
+		
+				`
+								
+					  } //on génère le html des titres dans un h2 ayant pour class .titre
+//on peut vérifier les données dans [i] avec : console.log(data[i])
+let titre = document.querySelector('.data') // on définit ce fameux titre
+titre.innerHTML = html //on lui attribue le html
+};
+}
+getArticles();
+
+/*fetch("http://localhost:3000/articles") // POUR AFFICHER UNE SEULE DONNÉE (ici titre de l'entrée 2 du tableau de données JSON), SERA PRATIQUE POUR LA PAGE "ARTICLE"
+        .then(response => response.json())
+		.then(data => generateHtml(data)) 
+		
+		
+const generateHtml = (varData) => {
+ // console.log(varData)
+  const html = `
+  <div class = "titre">
+      ${varData[3].titre}
+  </div>`	
+
+  const titre = document.querySelector('.data')
+  titre.innerHTML = html}*/
+
+//----------------------------------------
+  const getArticle = async (id)=> { 
+                const response = await fetch(`http://localhost:3000/articles/${id}`);
+                const article = await response.json();
+                generateHtmlArticle(article);
+            };
+
+            const generateHtmlArticle = (article) => {
+                resetPage();
+                const html = `          <div class = "articleView">
+                                        <div class= "fiche">
+                                        <h2 class="titre">${article.titre}</h2>
+                                        <h3 class="auteur">${article.auteur}</h3>
+                                        <h4 class="date">${article.date}</h4>
+                                        <div class="contenu">${article.contenu}</div>
+                                        </div>
+                                        <div class ="return"><button class="back"
+                                        onclick="getArticles(),resetPage()">Back</button></div></div>
+                                        
+                                                `;
+
+                let info = document.querySelector('.data');
+                info.innerHTML = html;
+            };
+
+            document.querySelectorAll('.voir').forEach((item) => {
+                item.addEventListener('click', getArticle);
+            });
+
+            /*  document.querySelectorAll('.back').forEach((item) => {
+                item.addEventListener('click', resetPage);
+            });*/
+
+            const resetPage = () => {
+                document.querySelector('.data').innerHTML = '';
+              
+            };
+
+ 
+</script>
+
+	
+<footer>
+		<div class = "info">
+		<div class="blog">
+			<h6>&Agrave; PROPOS DU BLOG</h6>
+			<div id = "ligne"></div>
+			
+
+			<p>Texte explicatif sur ce à quoi sert le site. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the1500s, when an unknown printer took a galley.</p>
+		</div>
+		<div class= "liens">
+			
+			<h6>LIENS PRATIQUES</h6>
+			<div id = "ligne"></div>
+		
+			<p>
+				- Home </br> - Formulaire </br> - Crédits & Contacts
+			</p>
+		</div>
+		<div class = "partenaires">
+			<h6>NOS PARTENAIRES</h6>
+			<div id = "ligne"></div>
+
+			<p>
+				- Blog promo 1 </br> - Blog promo 2 </br> - Blog promo 3
+			</p>
+		</div>
+	    </div>
+		<hr/>
+		<p class="droit">Copyright 2020 © Le Blog des Codeuses | Tous droits réservés </p>
+		
+	</footer>
+	
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+
+
+  
+
+  

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+header{
+	height: 170px;
+	background-color: #C7C3C3;
+	
+
+}
+.couleur{
+	background-color: #AE0404;
+	height: 150px;
+
+}
+
+.entete{
+	
+	margin-left:  180px;
+	padding-top: 30px;
+line-height: 	15px;
+
+
+
+}
+
+h1{
+	font-family: 'Racing Sans One';
+	font-size: 35px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+
+
+
+}
+h2{
+font-size: 22px;
+color: #FFFFFF;
+font-family: 'Roboto', sans-serif;
+font-weight: normal;
+
+
+}
+
+ section{
+	height: 400px;
+	width: 1000px;
+	background-color: #C7C3C3;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-top: 40px;
+    padding-top: 10px;
+}
+
+
+.titre{
+	height: 30px;
+	font-family: 'Roboto', sans-serif;
+	width: 250px;
+	background-color: #AE0404;
+	margin-right: 35%;
+	margin-left: 35%;
+	border-radius: 10px;
+	text-align: center;
+	
+
+    }
+    h3 { 
+  
+ color: #FFFFFF;
+ font-family: 'Roboto', sans-serif;
+ font-size: 18px;
+ font-weight: normal;
+ padding-top: 5px;
+
+    }
+
+
+ footer{
+ 	background-color: #AE0404;
+ 	padding-top: 0;
+ 	width: 100%;
+ 	margin-top: 40px;
+
+
+    }
+
+   .info {
+   	display : flex;
+   	justify-content: space-around;
+   	margin-right: 8%;
+   	margin-left: 8%;
+
+   }
+   .blog{
+   	width: 400px;
+   }
+h5{
+	text-align:  center;
+	color: #FFFFFF;
+	font-weight: lighter;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 20px;
+	font-size: 12px;
+
+}
+h4{
+	color: #FFFFFF;
+	font-family: 'Racing Sans One';
+	font-weight: bold;
+	font-size: 20px;
+	/*text-decoration: underline #C4C4C4;*/
+	margin: 0;
+	margin-top: 10px;
+
+}
+hr{
+	margin-left: 160px;
+	margin-right: 160px;
+}
+.info p{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+
+}
+#ligne{
+
+   height: 5px;
+	width: 40px;
+	background-color: #C4C4C4;
+
+}
+.liens p{
+	line-height: 23px;
+}
+.partenaires p{
+	line-height: 23px;
+}
+
+form{
+	margin-left: 10%;
+	margin-right:10%;
+	
+}
+input{
+	font-size: 20px;
+}
+ #nom{
+	margin-left: 38px;
+	height: 30px;
+	width: 605px;
+}
+#auteur{
+	margin-left: 25px;
+	height: 30px;
+	width: 603px;
+
+}
+#date{
+	margin-left: 42px;
+	height: 30px;
+	width: 605px;
+
+}
+textarea{
+	margin-left:14px;
+}
+#nom1{
+font-size: 18px;
+
+}
+#auteur1{
+	font-size: 18px;
+}
+#date1{
+	font-size: 18px;
+	position: relative;
+	bottom: 2px;
+
+}
+#contenu1{
+	font-size: 18px;
+	position: relative;
+	bottom: 65px;
+
+}
+
+
+    .envoyer{
+    height:30px;
+	width: 200px;
+	background: #047BAE;
+	margin-left: 34%;
+	margin-right: 34%;
+	margin-top: 10px; 
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 5px;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 1px 1px 1px #000000 ;
+
+	color: #FFFFFF;
+	font-size: 17px;
+    text-decoration:none;
+    align-content: center;
+
+    }
